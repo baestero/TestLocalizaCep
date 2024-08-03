@@ -1,7 +1,3 @@
-Claro! Aqui está o README atualizado com a substituição de "testes de integração" por "testes ponta a ponta":
-
----
-
 # Localiza CEP - Testes Automatizados com Cypress
 
 Este projeto contém testes automatizados para a aplicação "Localiza CEP" usando Cypress. O objetivo é garantir a qualidade e o correto funcionamento das funcionalidades da aplicação.
