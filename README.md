@@ -1,4 +1,4 @@
-Aqui está o README padronizado e completo para o projeto "Localiza CEP", incluindo as seções de Contribuição e Licença:
+Claro! Aqui está o README atualizado com a substituição de "testes de integração" por "testes ponta a ponta":
 
 ---
 
@@ -24,7 +24,7 @@ O projeto "Localiza CEP" é uma aplicação que permite buscar e localizar ender
 
 - **Verificação do Comportamento**: Valida o comportamento esperado ao buscar um CEP.
 - **Mensagens de Erro e Sucesso**: Testa a exibição correta de mensagens de erro e sucesso.
-- **Testes de Integração**: Garante que diferentes partes da aplicação funcionem corretamente juntas.
+- **Testes Ponta a Ponta**: Garante que diferentes partes da aplicação funcionem corretamente juntas e que o fluxo do usuário esteja completo e sem falhas.
 
 ## Instalação
 
@@ -103,4 +103,6 @@ Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICE
 
 A Licença MIT é uma licença permissiva que é amplamente utilizada e reconhecida. Ela permite que você use, copie, modifique, mescle, publique, distribua, sublicencie e/ou venda cópias do Software, desde que a permissão e o aviso de copyright sejam incluídos em todas as cópias ou partes substanciais do Software.
 
+---
 
+Se precisar de mais ajustes ou informações adicionais, é só avisar!
