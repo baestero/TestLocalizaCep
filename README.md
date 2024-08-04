@@ -1,6 +1,10 @@
-# Localiza CEP - Testes Automatizados com Cypress
+Para atualizar o setor de funcionalidades dos testes no seu README e fornecer um README completo atualizado com base nos testes que você implementou, aqui está o conteúdo revisado:
 
-Este projeto contém testes automatizados para a aplicação "Localiza CEP" usando Cypress. O objetivo é garantir a qualidade e o correto funcionamento das funcionalidades da aplicação.
+---
+
+## Localiza CEP - Testes Automatizados com Cypress
+
+Este projeto contém testes automatizados para a aplicação "Localiza CEP" usando Cypress. O objetivo é garantir a qualidade e o correto funcionamento das funcionalidades da aplicação em diferentes dispositivos.
 
 ## Índice
 
@@ -14,13 +18,18 @@ Este projeto contém testes automatizados para a aplicação "Localiza CEP" usan
 
 ## Sobre
 
-O projeto "Localiza CEP" é uma aplicação que permite buscar e localizar endereços a partir do CEP. Os testes automatizados têm como objetivo validar o comportamento e a estabilidade da aplicação durante o desenvolvimento e manutenção.
+O projeto "Localiza CEP" é uma aplicação que permite buscar e localizar endereços a partir do CEP. Os testes automatizados garantem que a busca de CEPs, validação de formatos e funcionamento dos links para o Google Maps estejam corretos em diferentes resoluções de tela.
 
 ## Funcionalidades dos Testes
 
-- **Verificação do Comportamento**: Valida o comportamento esperado ao buscar um CEP.
-- **Mensagens de Erro e Sucesso**: Testa a exibição correta de mensagens de erro e sucesso.
-- **Testes Ponta a Ponta**: Garante que diferentes partes da aplicação funcionem corretamente juntas e que o fluxo do usuário esteja completo e sem falhas.
+- **Verificação do Título da Aplicação**: Confirma se o título "LOCALIZA CEP" é exibido corretamente.
+- **Verificação do Retorno de um CEP Válido e Container Visível**: Testa se os dados do endereço são exibidos corretamente após inserir um CEP válido.
+- **Verificação dos Links para o Google Maps**: Garante que os links de visualização no Google Maps estejam corretamente configurados.
+- **Verificação de CEP Inexistente**: Testa a exibição da mensagem "CEP inexistente" ao buscar por um CEP que não existe.
+- **Verificação de CEP com Formato Inválido**: Valida a mensagem de erro ao inserir um CEP com formato inválido.
+- **Campo CEP Continua Vazio ao Preencher com Valor Não Numérico**: Assegura que o campo de entrada de CEP permaneça vazio ao tentar inserir caracteres não numéricos.
+
+Esses testes abrangem cenários críticos para garantir que a aplicação "Localiza CEP" funcione sem problemas, independentemente do dispositivo utilizado pelo usuário.
 
 ## Instalação
 
@@ -38,7 +47,7 @@ Para rodar os testes, você precisa do Node.js e do npm (Node Package Manager). 
 
 ### 2. Instalar o Cypress
 
-Com o Node.js e o npm instalados, siga as etapas abaixo para configurar o projeto e instalar o Cypress na versão 6.5.1:
+Com o Node.js e o npm instalados, siga as etapas abaixo para configurar o projeto e instalar o Cypress:
 
 1. Clone o repositório:
    ```bash
@@ -48,14 +57,14 @@ Com o Node.js e o npm instalados, siga as etapas abaixo para configurar o projet
    ```bash
    cd repositorio
    ```
-3. Instale as dependências do projeto, incluindo o Cypress na versão 6.5.1:
+3. Instale as dependências do projeto, incluindo o Cypress:
    ```bash
    npm install
    ```
 
-   Caso o Cypress não esteja listado nas dependências, adicione-o manualmente com:
+   Certifique-se de que o Cypress esteja listado nas dependências. Caso não esteja, adicione manualmente com:
    ```bash
-   npm install cypress@6.5.1 --save-dev
+   npm install cypress --save-dev
    ```
 
 ## Execução dos Testes
@@ -63,6 +72,11 @@ Com o Node.js e o npm instalados, siga as etapas abaixo para configurar o projet
 Para executar os testes automatizados com Cypress, use o seguinte comando:
 ```bash
 npx cypress open
+```
+
+Se preferir executar em modo headless (sem interface gráfica), utilize:
+```bash
+npx cypress run
 ```
 
 ## Localização dos Testes
@@ -82,7 +96,7 @@ Se você deseja contribuir para o projeto "Localiza CEP - Testes Automatizados c
    ```bash
    git checkout -b minha-contribuicao
    ```
-4. **Faça suas Alterações**: Faça as alterações desejadas e adicione os testes conforme necessário.
+4. **Faça suas Alterações**: Implemente novos testes ou melhore os existentes conforme necessário.
 5. **Commit e Push**: Faça commit das suas alterações e envie para o repositório forkado:
    ```bash
    git add .
@@ -101,4 +115,4 @@ A Licença MIT é uma licença permissiva que é amplamente utilizada e reconhec
 
 ---
 
-Se precisar de mais ajustes ou informações adicionais, é só avisar!
+Certifique-se de substituir `"usuario/repositorio"` com o caminho real do seu repositório no GitHub.
