@@ -1,7 +1,3 @@
-Para atualizar o setor de funcionalidades dos testes no seu README e fornecer um README completo atualizado com base nos testes que você implementou, aqui está o conteúdo revisado:
-
----
-
 ## Localiza CEP - Testes Automatizados com Cypress
 
 Este projeto contém testes automatizados para a aplicação "Localiza CEP" usando Cypress. O objetivo é garantir a qualidade e o correto funcionamento das funcionalidades da aplicação em diferentes dispositivos.
