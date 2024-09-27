@@ -21,7 +21,11 @@ btn.addEventListener("click", () => {
   }
 });
 
-
+function displayNone() {
+  document
+    .querySelectorAll(".resultado, .mapa")
+    .forEach((item) => (item.style.display = "none"));
+}
 
 async function buscadorCep(CEP) {
   const responseDados = await fetch(`https://viacep.com.br/ws/${CEP}/json/`);
