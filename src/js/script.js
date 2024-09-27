@@ -21,11 +21,7 @@ btn.addEventListener("click", () => {
   }
 });
 
-function displayNone() {
-  document
-    .querySelectorAll(".resultado, .mapa")
-    .forEach((item) => (item.style.display = "none"));
-}
+
 
 async function buscadorCep(CEP) {
   const responseDados = await fetch(`https://viacep.com.br/ws/${CEP}/json/`);
@@ -61,7 +57,7 @@ function limpaJson() {
 }
 
 function erroContainer() {
-  inexistente.style.dis;
+  inexistente.style.display = "none";
   erro.innerText = "Digite um CEP com 8 dígitos sem pontos ou traços.";
   document
     .querySelectorAll(".resultado, .erro, .resultado-container")
