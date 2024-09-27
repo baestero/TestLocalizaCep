@@ -61,7 +61,7 @@ function limpaJson() {
 }
 
 function erroContainer() {
-  inexistente.style.display = "none";
+  inexistente.style.dis;
   erro.innerText = "Digite um CEP com 8 dígitos sem pontos ou traços.";
   document
     .querySelectorAll(".resultado, .erro, .resultado-container")
